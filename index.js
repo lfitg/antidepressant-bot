@@ -1,5 +1,7 @@
+var token = process.env.TELEGRAM_TOKEN
+
 var TelegramBot = require('node-telegram-bot-api'),
-    telegram = new TelegramBot("", {polling: true});
+    telegram = new TelegramBot(token, {polling: true});
 
 var textArr = [
   'да хулі тут бля думать', 'тю їбать',
